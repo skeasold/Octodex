@@ -1,0 +1,84 @@
+.octodex {
+  display: flex;
+  margin: 0 auto;
+}
+.octocat {
+  margin: 24px;
+  padding: 0px;
+}
+.octocat img {
+  height: 450px;
+  width: 450px;
+  border: 1px solid #CDCDCD;
+  border-radius: 5px;
+}
+.image-footer {
+  display: flex;
+  align-items: baseline;;
+  border-bottom: 1px solid #CDCDCD;
+  text-align: right;
+}
+.image-number {
+  color: #CCCDCE;
+  font-weight: bold;
+  text-align: left;
+  width: 10%;
+}
+.image-number::before {
+  content:"#";
+}
+.image-caption {
+  display: flex;
+  align-items: center;
+  text-align: right;
+  width: 90%;
+  justify-content: flex-end;
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+.image-caption span {
+  color: #777777;
+  font-weight: bold;
+  margin: 0px 4px 0px 4px;
+}
+.authors {
+  padding: 0px;
+}
+.authors img {
+  height: 28px;
+  width: 28px;
+}
+li {
+  display: inline;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0 auto;
+  }
+  .octocat {
+    margin: 24px 0px 24px 0px;
+  }
+  .octodex {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    padding: 0px;
+  }
+  .image-footer {
+    display: flex;
+  }
+}
+
+  /* Unable to do arrow.
+  ::after
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px 8px 0 8px;
+  border-color: #cacaca transparent transparent transparent;*/
